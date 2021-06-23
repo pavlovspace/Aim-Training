@@ -7,26 +7,36 @@
     <title>Aim Training</title>
   </head>
   <body>
-    <div class="screen">
-      <h1>Aim Training</h1>
-      <a href="#" class="start">Zacząć gre</a>
+<div class="wrapperScreen screen">
+  <div id="particles-js">
+  </div>
+  <div class="screen screenFirst">
+    <h1>Aim Training</h1>
+    <div class="btn">
+      <a href="#" class="start" id="start">Zacząć gre</a>
     </div>
-
+  </div>
+</div>
     <div class="screen">
       <h1>Wybierz czas</h1>
-      <ul class="time-list">
+      <ul class="time-list" id="time-list">
         <li>
-          <button class="time-btn">
+          <button class="time-btn" data-time="5">
+            5 sek
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="10">
             10 sek
           </button>
         </li>
         <li>
-          <button class="time-btn">
+          <button class="time-btn" data-time="20">
             20 sek
           </button>
         </li>
         <li>
-          <button class="time-btn">
+          <button class="time-btn" data-time="30">
             30 sek
           </button>
         </li>
@@ -37,6 +47,11 @@
       <h3>Pozostało <span id="time">00:00</span></h3>
       <div class="board" id="board"></div>
     </div>
+
+
+    <script src="particles.js"></script>
+    <script src="particles.json"></script>
     <script src="app.js"></script>
+
   </body>
 </html>
